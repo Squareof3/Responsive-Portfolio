@@ -99,6 +99,11 @@ img {
 	width: 100%;
 }
 
+.clearfix{
+	margin-top: 25px;
+	margin-left: 60px;
+}
+
 .clearfix::after {
 	content: "";
 	display: block;
@@ -111,8 +116,50 @@ img {
 	font-weight: normal;
 }
 
-@media screen (max-width: 980px) {
+@media screen and (max-width: 980px) {
 		
+		body {
+			background-color: #333;
+		}
+		.aboutme {
+			width: 35%;
+		}
+
+		.p1 {
+			clear: both;
+		}
 }
 
-@media s
+@media screen and (max-width: 768px) {
+
+	.aboutme {
+		width: 85%;
+
+	}
+
+	.p1 {
+		clear: both;
+	}
+
+	.connect {
+		clear: both;
+		width: 85%;
+
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+	.aboutme {
+		width: 60%;
+	}
+
+	.p1 {
+		clear: both;
+	}
+
+	.connect {
+		clear: both;
+		width: 60%;
+	}
+}
